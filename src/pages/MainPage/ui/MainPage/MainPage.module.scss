@@ -1,0 +1,14 @@
+.MainPage {
+    margin-left: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1420px) {
+.MainPage {
+    width: 100%;
+    max-width: 100%;
+    margin-left:auto;
+    margin-top: 100px;
+    overflow-y: auto;
+}}
