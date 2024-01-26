@@ -1,5 +1,6 @@
 import {memo, ReactNode} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
+import {MapLoader} from "../../../../features/MapLoader/MapLoader";
 
 interface MainPageProps {
     className?: string
@@ -25,6 +26,7 @@ interface MainPageProps {
         >
             {children}
             Проверка
+            <MapLoader/>
         </div>
     );
 });

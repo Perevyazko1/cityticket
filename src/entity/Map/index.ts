@@ -1,0 +1,1 @@
+export type {attributesSvgType} from "./type/attributesSvgType"

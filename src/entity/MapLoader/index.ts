@@ -1,0 +1,1 @@
+export type {mapData} from "./type/mapData"
