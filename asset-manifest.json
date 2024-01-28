@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/cityticket/static/css/main.2ca76b6f.css",
-    "main.js": "/cityticket/static/js/main.f9abad2a.js",
-    "static/css/84.4d025cb1.chunk.css": "/cityticket/static/css/84.4d025cb1.chunk.css",
-    "static/js/84.8aac9242.chunk.js": "/cityticket/static/js/84.8aac9242.chunk.js",
+    "main.js": "/cityticket/static/js/main.44ae7d24.js",
+    "static/css/561.d7377ad2.chunk.css": "/cityticket/static/css/561.d7377ad2.chunk.css",
+    "static/js/561.63b8cc1e.chunk.js": "/cityticket/static/js/561.63b8cc1e.chunk.js",
     "static/js/787.52c4fd34.chunk.js": "/cityticket/static/js/787.52c4fd34.chunk.js",
     "static/js/305.48771a53.chunk.js": "/cityticket/static/js/305.48771a53.chunk.js",
     "index.html": "/cityticket/index.html",
     "main.2ca76b6f.css.map": "/cityticket/static/css/main.2ca76b6f.css.map",
-    "main.f9abad2a.js.map": "/cityticket/static/js/main.f9abad2a.js.map",
-    "84.4d025cb1.chunk.css.map": "/cityticket/static/css/84.4d025cb1.chunk.css.map",
-    "84.8aac9242.chunk.js.map": "/cityticket/static/js/84.8aac9242.chunk.js.map",
+    "main.44ae7d24.js.map": "/cityticket/static/js/main.44ae7d24.js.map",
+    "561.d7377ad2.chunk.css.map": "/cityticket/static/css/561.d7377ad2.chunk.css.map",
+    "561.63b8cc1e.chunk.js.map": "/cityticket/static/js/561.63b8cc1e.chunk.js.map",
     "787.52c4fd34.chunk.js.map": "/cityticket/static/js/787.52c4fd34.chunk.js.map",
     "305.48771a53.chunk.js.map": "/cityticket/static/js/305.48771a53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ca76b6f.css",
-    "static/js/main.f9abad2a.js"
+    "static/js/main.44ae7d24.js"
   ]
 }
