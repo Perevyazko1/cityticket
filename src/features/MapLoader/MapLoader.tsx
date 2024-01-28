@@ -3,6 +3,7 @@ import {classNames, Mods} from "shared/lib/classNames/classNames";
 import axios from "axios";
 import {Map} from "../Map/Map";
 import {mapData} from "entity/MapLoader";
+import {MapDrag} from "../MapDrag/MapDrag";
 
 
 interface MapLoaderProps {
@@ -34,7 +35,6 @@ export const MapLoader = memo((props: MapLoaderProps) => {
                 console.error('Ошибка загрузки SVG-схемы:', error);
             });
     }, []);
-    // console.log(svgData?.attributes)
 
     const {
         className,
@@ -49,11 +49,10 @@ export const MapLoader = memo((props: MapLoaderProps) => {
             className={classNames('', mods, [className])}
             {...otherProps}
         >
-            {/*{svgData && svgData.map((data)=>*/}
-               <Map attributesSvg={svgData?.attributes}/>
-            {/*    )*/}
-            {/*}*/}
-            {/*<Map attributesSvg={svgData}/>*/}
+            <MapDrag>
+                <Map apiSvg={'http://tsnext.ru/test/frontend/resources/dkl-tsn.svg'}/>
+            </MapDrag>
+
         </div>
     );
 });
