@@ -1,8 +1,8 @@
 import {memo, ReactNode} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
-import {MapLoader} from "../../../../features/MapLoader/MapLoader";
-import {PageWrapper} from "../../../../shared/ui/PageWrapper/PageWrapper";
-import {useWindowWidth} from "../../../../shared/hooks/useWindowWidth/useWindowWidth";
+import {MapLoader} from "features/MapLoader/MapLoader";
+import {PageWrapper} from "shared/ui/PageWrapper/PageWrapper";
+import {useWindowWidth} from "shared/hooks/useWindowWidth/useWindowWidth";
 
 interface MainPageProps {
     className?: string

@@ -2,6 +2,7 @@ import {memo, ReactNode, useEffect, useRef, useState} from 'react';
 import {classNames, Mods} from "shared/lib/classNames/classNames";
 import {ReactSVG} from 'react-svg';
 import cls from "./Map.module.scss"
+import {useUpdateContext} from "../Context/UpdateContext";
 
 
 interface MapProps {
@@ -26,6 +27,7 @@ export const Map = memo((props: MapProps) => {
 
     const [listId, setListId] = useState<string[]>([])
     const svgRef = useRef(null)
+    const {update, setUpdate} = useUpdateContext()
 
 
     const handleElementClick = (event: any) => {
@@ -36,12 +38,12 @@ export const Map = memo((props: MapProps) => {
         } else {
             setListId([...listId, clickedElement.id])
         }
+        // setUpdate(true)
         handUpdate()
     };
 
 
     const handUpdate = () => {
-        console.log("функция сработала")
         listId.map((itemId) => {
             const click = document.getElementById(itemId)
             if (click) {
@@ -53,9 +55,11 @@ export const Map = memo((props: MapProps) => {
     }
     useEffect(() => {
         setTimeout(() => {
-            handUpdate();
+               handUpdate();
+            setUpdate(false)
+
         }, 2)
-    }, [listId]);
+    }, [listId,update]);
 
     return (
         <div
