@@ -32,13 +32,12 @@ export const Map = memo((props: MapProps) => {
 
     const handleElementClick = (event: any) => {
         const clickedElement = event.target;
-        console.log(clickedElement)
         if (listId.includes(clickedElement.id)) {
+            clickedElement.style.fill = "red"
             setListId(prevListId => prevListId.filter(id => id !== clickedElement.id));
         } else {
             setListId([...listId, clickedElement.id])
         }
-        // setUpdate(true)
         handUpdate()
     };
 
@@ -47,9 +46,7 @@ export const Map = memo((props: MapProps) => {
         listId.map((itemId) => {
             const click = document.getElementById(itemId)
             if (click) {
-                click.classList.add('red')
-                click.setAttribute('style', 'fill: red'); // Установка цвета напрямую через атрибут fill
-                click.style.fill = "red"; // Обновление стиля для немедленного отображения изменений
+                click.style.fill = "red";
             }
         });
     }
@@ -68,7 +65,7 @@ export const Map = memo((props: MapProps) => {
         >
             <ReactSVG
                 className={cls.Map}
-                src={apiSvg}
+                src={'https://ci41159.tw1.ru/static/converted.svg'}
                 style={{transform: `scale(${scale})`, transformOrigin: 'left top'}}
                 onClick={(e) => {
                     handleElementClick(e)
